@@ -18,7 +18,11 @@
     }
   },
   "fmt": {
-    "include": ["islands", "routes", "components"],
+    "include": [
+      "islands",
+      "routes",
+      "components"
+    ],
     "indentWidth": 2,
     "lineWidth": 80,
     "semiColons": false,
@@ -42,5 +46,13 @@
     "jsx": "react-jsx",
     "jsxImportSource": "preact"
   },
-  "nodeModulesDir": true
+  "nodeModulesDir": true,
+  "deploy": {
+    "project": "81adf770-ca1b-4248-a98e-47d01d4078f2",
+    "exclude": [
+      "**/node_modules"
+    ],
+    "include": [],
+    "entrypoint": "main.ts"
+  }
 }
