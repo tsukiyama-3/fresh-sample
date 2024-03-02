@@ -1,4 +1,6 @@
-export default function Home() {
+export default async function Home() {
+  const db = await Deno.openKv()
+  const word = await db.get<string>(['word'])
   return (
     <div>
       <link
@@ -9,7 +11,7 @@ export default function Home() {
         {`h1 {font-family: 'Yuji Syuku', sans-serif;}`}
       </style>
       <h1 class='text-9xl flex justify-center items-center h-screen'>
-        臥薪嘗胆
+        {word.value}
       </h1>
     </div>
   )
