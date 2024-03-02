@@ -17,6 +17,13 @@
       ]
     }
   },
+  "fmt": {
+    "include": ["islands", "routes", "components"],
+    "indentWidth": 2,
+    "lineWidth": 80,
+    "semiColons": false,
+    "singleQuote": true
+  },
   "exclude": [
     "**/_fresh/*"
   ],
